@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #00c2de;
+}
+
+body{
+    background: #000000;
+    font-family: 'Eurostile Extended', 'Magistral', sans-serif;
+}
+
+/* Header */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+header::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    height: 5px;
+    width: 38%;
+    background: linear-gradient(90deg, var(--primary), transparent);
+}
+
+.logo{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.logo img{
+    max-width: 200px;
+    filter: invert(1);
+}
